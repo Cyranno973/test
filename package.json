@@ -1,0 +1,24 @@
+{
+  "name": "maudmangeant_6_12062021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"blabla\" && exit 1",
+    "sass": "sass ./sass/style.scss:style.css -w --no-source-map ",
+    "compile": "sass ./sass/style.scss:style2.css --style compressed --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MMangeant/MaudMangeant_6_12062021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MMangeant/MaudMangeant_6_12062021/issues"
+  },
+  "homepage": "https://github.com/MMangeant/MaudMangeant_6_12062021#readme",
+  "dependencies": {
+    "sass": "^1.38.1"
+  }
+}

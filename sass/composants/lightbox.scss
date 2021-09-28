@@ -1,0 +1,55 @@
+/* LIGHTBOX */
+.lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, .80);
+    z-index: 10;
+    button{
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        z-index: 11;
+    }
+
+    &__prev, &__next{
+        background : url(icones/arrow.svg) center center / 100% 100% no-repeat;
+        width: 30px;
+        height: 48px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+    &__prev{
+        right: auto;
+        left: 0;  
+        transform: rotate(0);
+    }
+
+    &__close{
+        background : url(icones/close.svg) center center / 100% 100% no-repeat;
+        width: 42px;
+        height: 42px;
+        right: 0;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__photo{
+        max-width: 80%;
+        height: auto;
+    }
+
+}
+
+
+

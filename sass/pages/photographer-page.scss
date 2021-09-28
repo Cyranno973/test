@@ -1,0 +1,74 @@
+.presentationPhotograph{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 100px;
+    align-items: center;
+    background-color: $col-grisClair;
+    position: relative;
+    .textPhotographer{
+        p{
+            color: $col-gris;
+        }
+    }
+}
+
+.contactPhotographer{
+    background-color: $col-rouge;
+    padding: 20px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 60px;
+    left: 400px;
+    color: white;
+    text-decoration: none;
+    appearance: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.lienPhoto{
+    img, video{
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+}
+
+.textPhoto{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $col-rouge;
+}
+
+.likesPhoto{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $col-rouge;
+}
+
+.heart{
+    margin-left: 7px;
+    width: 20px;
+}
+
+
+.photosPhotograph{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.encartPhoto{
+
+    width: 350px;
+    margin: 15px auto;
+    display: inline-block;
+    
+}

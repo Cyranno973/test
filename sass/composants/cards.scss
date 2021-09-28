@@ -1,0 +1,24 @@
+
+.namePhotographer{
+    color: $col-orange;
+    font-size: 2.5em;
+    margin: 25px 0 15px 0;
+}
+
+.portraitPhotographer{
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.textPhotographer{
+    h3{
+        font-size: 1.1em;
+        margin: 0;
+        color: $col-rouge;
+    }
+    p{
+        margin: 5px 0;
+    }
+}

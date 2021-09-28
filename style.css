@@ -1,0 +1,295 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  padding: 15px;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+main {
+  overflow: hidden;
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+}
+.lightbox button {
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  z-index: 11;
+}
+.lightbox__prev, .lightbox__next {
+  background: url(icones/arrow.svg) center center/100% 100% no-repeat;
+  width: 30px;
+  height: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  transform: rotate(180deg);
+}
+.lightbox__prev {
+  right: auto;
+  left: 0;
+  transform: rotate(0);
+}
+.lightbox__close {
+  background: url(icones/close.svg) center center/100% 100% no-repeat;
+  width: 42px;
+  height: 42px;
+  right: 0;
+}
+.lightbox__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lightbox__photo {
+  max-width: 80%;
+  height: auto;
+}
+
+.tagsPhotograph {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tagsPhotograph a {
+  color: #901c1c;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #C4C4C4;
+  border-radius: 20px;
+  padding: 5px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.namePhotographer {
+  color: #D3573C;
+  font-size: 2.5em;
+  margin: 25px 0 15px 0;
+}
+
+.portraitPhotographer {
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.textPhotographer h3 {
+  font-size: 1.1em;
+  margin: 0;
+  color: #901c1c;
+}
+.textPhotographer p {
+  margin: 5px 0;
+}
+
+.modalContact {
+  background-color: #DB8876;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 7px;
+  display: none;
+}
+.modalContact .modal-body {
+  width: 95%;
+  margin: auto;
+}
+.modalContact .formData input {
+  width: 100%;
+  margin: auto;
+  border-radius: 5px;
+  min-height: 50px;
+  border: none;
+  margin: 7px 0;
+}
+.modalContact .formData label {
+  font-size: 1.3em;
+}
+.modalContact .close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(0.7);
+}
+.modalContact .close:before, .modalContact .close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 3px;
+  background-color: #fff;
+}
+.modalContact .close:before {
+  transform: rotate(45deg);
+}
+.modalContact .close:after {
+  transform: rotate(-45deg);
+}
+.modalContact .formTitle {
+  font-size: 2.3em;
+  font-weight: 400;
+}
+.modalContact .btn-submit {
+  background-color: #901c1c;
+  padding: 20px 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  appearance: none;
+  border: none;
+  font-size: 1em;
+  width: 133px;
+  cursor: pointer;
+}
+
+header {
+  flex-direction: column;
+  align-items: center;
+}
+header #menu ul li .yellow {
+  background-color: #901c1c;
+  color: white;
+}
+
+.header-logo img {
+  width: 55%;
+  max-width: 200px;
+}
+
+#menu ul {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+#menu ul a {
+  color: #901c1c;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #C4C4C4;
+  border-radius: 20px;
+  padding: 5px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+#titreAccueil {
+  color: #901c1c;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 2em;
+}
+
+.encartPhotographer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.encartPhotographer a {
+  text-decoration: none;
+}
+.encartPhotographer .pricePhotographer {
+  color: #757575;
+}
+
+/*
+*
+*/
+@media only screen and (min-width: 800px) {
+  .photographers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px 0px;
+    margin-top: 50px;
+  }
+}
+.presentationPhotograph {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 100px;
+  align-items: center;
+  background-color: #FAFAFA;
+  position: relative;
+}
+.presentationPhotograph .textPhotographer p {
+  color: #757575;
+}
+
+.contactPhotographer {
+  background-color: #901c1c;
+  padding: 20px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 60px;
+  left: 400px;
+  color: white;
+  text-decoration: none;
+  appearance: none;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.lienPhoto img, .lienPhoto video {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.textPhoto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #901c1c;
+}
+
+.likesPhoto {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #901c1c;
+}
+
+.heart {
+  margin-left: 7px;
+  width: 20px;
+}
+
+.photosPhotograph {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.encartPhoto {
+  width: 350px;
+  margin: 15px auto;
+  display: inline-block;
+}

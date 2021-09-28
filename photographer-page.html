@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>FishEye</title>
+</head>
+
+<body>
+<header role="banner">
+    <div class="header-logo" aria-label="logo">
+        <img alt="logo FishEye" src="images/logo.png" width="auto" height="auto"/>
+    </div>
+</header>
+<main>
+    <section>
+        <div class="presentationPhotograph"></div>
+        <div class="photosPhotograph"></div>
+        <!-- <div class="lightbox">
+          <button class="lightbox__close"></button>
+          <button class="lightbox__prev"></button>
+          <button class="lightbox__next"></button>
+          <div class="lightbox__container">
+            <img class="lightbox__photo" src="Sample_Photos/Mimi/Portrait_Nora.jpg" alt="photographer photo">
+          </div>
+        </div> -->
+    </section>
+    <div class="modalContact">
+        <span class="close" id="closeForm"></span>
+        <div class="modal-body">
+            <form id="formUser" name="reserve" action="index.html" method="get" onsubmit="return validate();">
+                <div>
+                    <h4 class="formTitle">Contactez-moi</h4>
+                    <h4 class="formName"></h4>
+                </div>
+
+                <div class="formData">
+                    <label>Prénom</label><br>
+                    <input class="text-control" type="text" id="first" name="first"/><br>
+                </div>
+                <!-- message d'erreur pour le prénom -->
+                <div id="error-firstName" class="errorText"></div>
+
+                <div class="formData">
+                    <label>Nom</label><br>
+                    <input class="text-control" type="text" id="last" name="last"/><br>
+                </div>
+                <!-- message d'erreur pour le nom -->
+                <div id="error-lastName" class="errorText"></div>
+
+                <div class="formData">
+                    <label>E-mail</label><br>
+                    <input class="text-control" id="email" name="email"/><br>
+                </div>
+                <!-- message d'erreur pour le mail -->
+                <div id="error-mail" class="errorText"></div>
+
+                <input id="validation-btn" class="btn-submit" type="submit" class="button" value="Envoyer"/>
+            </form>
+        </div>
+    </div>
+    <section>
+        <div>
+            <img src="" alt="">
+        </div>
+    </section>
+</main>
+<footer></footer>
+<script src="js/variables.js"></script>
+<script src="json.js"></script>
+<script src="js/photographer-page.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
